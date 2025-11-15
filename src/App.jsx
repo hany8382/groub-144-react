@@ -7,13 +7,7 @@ import axios from 'axios';
 function App() {
   const url = 'https://crudcrud.com/api/b425d3ff78d9462b9f320370cdc1c563/products';
   async function fetchData(){
-    try{
-      const res = await axios.get(url)
-      console.log(res.data)
-    }catch(error){
-      console.log(error)
-    }
-  }
+
  async function AddProduct() {
   const new_producr={
     title: "new product",
